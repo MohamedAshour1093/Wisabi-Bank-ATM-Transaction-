@@ -1,111 +1,102 @@
-# Wisabi Bank ATM Transaction
+# Wisabi Bank ATM Transaction Analytics | Power BI
 
-<img src="./Dashboard/Home.png" alt="Home" width="100%" >
-<img src="./Dashboard/Overview.png" alt="Home" width="100%" >
-<img src="./Dashboard/Demography.png" alt="Home" width="100%" >
+## 📊 Project Overview
+This project analyzes ATM transaction data for Wisabi Bank to understand customer behavior, ATM utilization, and regional performance.  
+The goal is to provide actionable insights that help improve ATM service availability, customer experience, and operational efficiency.
 
-<h1>Project Overview</h1>
-<p>
-  The purpose of this project is to analyze the ATM transaction data for Wisabi Bank to gain insights on customer behavior, ATM usage, and identify opportunities to improve the bank's services.
-</p>
+---
 
-<h3>Steps Involved in the Project</h3>
-<ol>
-  <li>Data Cleansing using Power Query</li>
-  <li>Data Modeling</li>
-  <li>Dashboard Creation using Power BI</li>
-  <li>Interpretation and Presentation</li>
-</ol>
+## 🎯 Business Objective
+Banks rely heavily on ATM networks for customer access to cash and basic banking services.  
+This analysis helps stakeholders to:
+- Monitor ATM usage patterns
+- Identify high and low utilization locations
+- Understand customer transaction behavior
+- Support data-driven decisions for ATM placement and optimization
 
+---
 
-<h1>1:Data Cleansing using Power Query</h1>
+## 🛠️ Data Preparation (Power Query)
+Data cleansing was performed to ensure accuracy and consistency before analysis:
 
-Data cleansing is a crucial step to ensure that the data is accurate, consistent, and ready for analysis
+- Imported raw ATM transaction data into Power Query
+- Removed duplicate records to avoid skewed results
+- Handled missing values based on business relevance
+- Standardized date, time, and transaction formats
+- Performed transformations such as:
+  - Column splitting and merging
+  - Data type corrections
+  - Derived metrics creation
 
-<h2>Steps:</h2>
+**Tools used:**  
+- Power BI (Power Query)
 
-<h3>Import Data:</h3>
+---
 
-Load the raw data into Power Query.
-<h3>Remove Duplicates:</h3>
+## 🧱 Data Modeling
+A structured data model was created to support scalable analysis:
 
-Identify and remove duplicate records to avoid skewed results.
-<h3>Handle Missing Values:</h3>
+### Fact Tables
+- Kano Transactions
+- Lagos Transactions
+- FCT Transactions
+- Rivers Transactions
 
-Fill in or remove missing values based on the context and significance.
-<h3>Standardize Formats:</h3>
+### Dimension Tables
+- Calendar Dimension
+- Transaction Type Dimension
+- Customer Dimension
+- Location Dimension
 
-Ensure consistent data formats .
-<h3>Transform Data:</h3>
+Relationships were defined between fact and dimension tables to enable accurate filtering, aggregation, and time-based analysis.
 
-Apply necessary transformations such as splitting columns, merging datasets, and calculating new metrics.
+**Tools used:**  
+- SQL Server  
+- Power BI Data Modeling
 
-<h3>Tools:</h3>
+---
 
-Power BI for Power Query
-Power BI for advanced transformations
-<hr>
+## 📊 Dashboard Development (Power BI)
+An interactive dashboard was built to visualize key insights and performance indicators.
 
-<h1>2. Data Modeling</h1>
+### Key Metrics Analyzed
+- ATM utilization rates (highest and lowest performing locations)
+- Average transaction time by location
+- Transaction amount distribution
+- Transaction frequency by region
+- Regional performance comparison
 
-Data modeling involves structuring the cleaned data into a format suitable for analysis.
+### Dashboard Features
+- Interactive filters and slicers
+- Location-based performance views
+- Customer demographic analysis
+- Transaction behavior insights
 
-<h2>Steps:</h2>
+---
 
-<h3>Create Fact and Dimension Tables:</h3>
+## 📈 Insights & Outcomes
+- Identified ATMs with consistently high and low utilization rates
+- Highlighted regional differences in transaction volume and behavior
+- Provided visibility into transaction patterns by customer demographics
+- Enabled stakeholders to identify opportunities for ATM network optimization
 
- <h3>Fact Table: </h3>
-Contains ATM  transaction data 
-<h3> Dimension Tables:</h3>
-Contain descriptive attributes related to the fact data 
+---
 
-<h3> Define Relationships:</h3>
+## 🧰 Tools & Technologies
+- **Power BI** — Dashboard creation and visualization
+- **Power Query** — Data cleansing and transformation
+- **SQL Server** — Data modeling support
 
-Establish relationships between fact and dimension tables to enable accurate data analysis.
-Example Tables:
+---
 
- <h3>Fact Table:</h3> 
-Kano Transaction table , Lagos Transaction table ,FCT Transaction table and Rivers Transaction table
+## 📂 Project Assets
+- Power BI Dashboard (PBIX)
+- Dashboard Images
+- Stakeholder Presentation (PPTX)
 
+📎 [View Presentation](./Wisabi%20Bank-Report.pptx)
 
-<h3>Dimension Tables</h3>
-Calendar Dimension Table ,Transaction Type Dimension Table,Customers Dimension Table and Location Dimension Table 
+---
 
-
-<h3>Tools:</h3> 
-
-SQL Server<br>
-Power BI Data Modeling
-<hr>
-
-<h2>3. Dashboard Creation using Power BI</h2>
-A dashboard is created to visualize the insights derived from the data.
-
-<h2>Steps:</h2>
-
-<h3>Import Data Model:</h3>
-
-Load the data model into Power BI.
-<h3>Create Visualizations:</h3>
-
-Develop visual representations such as bar charts, line graphs, and pie charts to showcase key metrics and trends.
-Design Dashboard:
-
-Arrange visualizations in a user-friendly layout for easy interpretation.
-Include filters and slicers to enable interactive analysis.
-
-<h3>Key Metrics:</h3>
-ATM locations have the highest and lowest utilization rates
-Average transaction time by location
-transaction amoun
-Regional Performance
-Distribution of transaction amounts and transaction frequency
-
-<h4>Tools:</h4>
-Power BI
-
-<hr>
-
-
-<h2>Insights and Recommendations</h2>
-<a href="./Wisabi Bank-Report.pptx">View Presentation</a>
+## 📌 Notes
+This project reflects a real-world **banking operations and ATM analytics workflow**, focusing on operational visibility and service optimization rather than purely exploratory analysis.
